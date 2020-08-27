@@ -14,41 +14,14 @@
 
 <body>
 
+    <div id="top"></div>
+
     <div id="returnToTop">
         <a class="returnLink" href="#top">
             ^
         </a>
     </div>
 
-    <header id="top">
-        <div class="header header-frame">
-            <h1 class="header-title">ben@hall:~/home</h1>
-            <nav class="header-nav">
-                <ul class="header-nav-list header-nav-list-menu">
-                    <li class="header-nav-list-item">
-                        <a class="header-nav-list-link" href="#experiences">
-                            <span>/experiences</span>
-                        </a>
-                    </li>
-                    <li class="header-nav-list-item">
-                        <a class="header-nav-list-link" href="#projects">
-                            <span>/projects</span>
-                        </a>
-                    </li>
-                    <li class="header-nav-list-item">
-                        <a class="header-nav-list-link" href="#education">
-                            <span>/education</span>
-                        </a>
-                    </li>
-                    <li class="header-nav-list-item">
-                        <a class="header-nav-list-link" href="#contact">
-                            <span>/contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
     <div id="tome" class="modal">
 
         <div class="modal-content">
@@ -680,6 +653,37 @@
     </div>
       
     <div id="content">
+
+        <div id="education" class="section">
+            <h1 class="card-title">/introduction</h1>
+
+            <div class="intro-container">
+                <div class="intro-card">
+                    <div class="intro-text-container">
+                        <div class="card-subtitle-full">
+                            Hey, I'm Ben Hall!
+                        </div>
+                        <br><br>
+                        <div>
+                            <p class="intro-card-text">
+                                I'm a Cybersecurity Engineering major at Iowa State looking to make the internet more secure. I've learned a variety of skills to help me achieve my goals.
+                            </p>
+                        </div><br>
+                        <div>
+                            <div>
+                                <a class="header-nav-link" href="#contact">
+                                    <span>/contact</span>
+                                </a>
+                                <a class="header-nav-link" href="#contact">
+                                    <span>/resume</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
         
         <div id="experiences" class="section">
             <h1 class="card-title">/experiences</h1>
@@ -858,7 +862,7 @@
                     var year = today.getFullYear()
                     document.write(year)
                 </script>,
-                Ben Hall, v0.9.3
+                Ben Hall, v0.9.4
             </div>
             <a class="copyright link" target="_blank" href="https://github.com/swidex/blog">
                 SOURCE

@@ -67,6 +67,24 @@ body {
     margin-left: auto;
 }
 
+.intro-container {
+    width: 80%;
+    display: grid;
+    row-gap: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    column-gap: 24px;
+    display: grid;
+    row-gap: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro-text-container {
+    padding: 2rem;
+}
+
 .card-text-container {
     width: 67%;
     float:right;
@@ -91,6 +109,11 @@ body {
 
 .card-text {
     font-family: "Inconsolata"; font-size: 1.2rem; font-weight: 100; color: white; letter-spacing: 0;
+    margin-top: -.25rem;
+}
+
+.intro-card-text {
+    font-family: "Inconsolata"; font-size: 1.4rem; font-weight: 100; color: white; letter-spacing: 0;
     margin-top: -.25rem;
 }
 
@@ -141,6 +164,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.intro-card {
+    border: 1px solid white;
+    position: relative;
+    padding: 2rem;
+    z-index: 0;
 }
 
 .card-full {
@@ -194,73 +224,17 @@ body {
     z-index: 0;
 }
 
-header {
-    max-width: 1584px;
-    margin:0 auto;
-    padding: 1rem 2%;
-    width: 100%;
-    position: relative;
-    z-index: 000;
-    display: block;
-}
-
-.header-frame {
-    border: 1px solid white;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 1rem;
-    overflow: visible;
-    background-color: black;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-title {
-    font-family: "Inconsolata";
-    font-size: 2rem;
-    font-weight: 200;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: .5rem;
-    color: white;
-}
-
-.header-nav {
-    display: flex;
-}
-
-.header-nav-list {
-    display: flex;
-}
-
-.header-nav-list-menu {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-ol, ul {
-    list-style: none;
-}
-
 a{
     text-decoration: none;
     color: inital;
 }
 
-.header-nav-list-item {
+.header-nav-link {
     font-family: "Inconsolata"; font-size: 1.6rem; font-weight: 200; color: white; letter-spacing: 0.2rem;
-    margin-bottom: 0; margin-top: 0; margin-left: .5rem;
     cursor: pointer;
-    padding-left: 1rem; padding-right: 1rem;
 }
 
-.header-nav-list-link:hover {
+.header-nav-link:hover {
     color: black;
     background-color: white;
 }
@@ -351,11 +325,17 @@ and (max-device-width : 480px) {
         width: 100%;
         display: none;
     }
+    .intro-container {
+        width: 100%;
+    }
     .mobile-only {
         display: block;
     }
     .desktop-only {
         display: none;
+    }
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -374,6 +354,9 @@ and (min-width : 321px) {
     .header-frame {
         width: 100%;
     }
+    .intro-container {
+        width: 100%;
+    }
     .header-nav-list-menu {
         display: none;
     }
@@ -388,6 +371,7 @@ and (min-width : 321px) {
         width: 100%;
         display: none;
     }
+    
     .mobile-only {
         display: inline;
     }
@@ -411,6 +395,9 @@ and (max-device-width : 1024px) {
         width: 100%;
     }
     .header-frame {
+        width: 100%;
+    }
+    .intro-container {
         width: 100%;
     }
     .header-nav-list-menu {
@@ -471,6 +458,9 @@ and (min-width : 1224px) {
         width: 80%;
         display: grid;
     }
+    .intro-container {
+        width: 80%;
+    }
     .mobile-only {
         display: none;
     }
@@ -510,11 +500,13 @@ and (min-width : 1824px) {
         width: 80%;
         display: grid;
     }
+    .intro-container {
+        width: 80%;
+    }
     .mobile-only {
         display: none;
     }
     .desktop-only {
         display: block;
     }
-    
 }
