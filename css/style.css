@@ -352,7 +352,7 @@ and (max-device-width : 480px) {
         display: none;
     }
     .mobile-only {
-        display: inline;
+        display: block;
     }
     .desktop-only {
         display: none;
