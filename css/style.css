@@ -349,6 +349,7 @@ and (max-device-width : 480px) {
     }
     .card-container-full {
         width: 100%;
+        display: none;
     }
     .mobile-only {
         display: inline;
@@ -382,6 +383,7 @@ and (min-width : 321px) {
     }
     .card-container-full {
         width: 100%;
+        display: none;
     }
     .mobile-only {
         display: inline;
@@ -420,9 +422,10 @@ and (max-device-width : 1024px) {
     }
     .card-container-full {
         width: 100%;
+        display: none;
     }
     .mobile-only {
-        display: inline;
+        display: block;
     }
     .desktop-only {
         display: none;
@@ -463,6 +466,7 @@ and (min-width : 1224px) {
     }
     .card-container-full {
         width: 80%;
+        display: grid;
     }
     .mobile-only {
         display: none;
@@ -501,6 +505,7 @@ and (min-width : 1824px) {
     }
     .card-container-full {
         width: 80%;
+        display: grid;
     }
     .mobile-only {
         display: none;
