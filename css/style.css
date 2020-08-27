@@ -354,6 +354,9 @@ and (max-device-width : 480px) {
     .mobile-only {
         display: inline;
     }
+    .desktop-only {
+        display: none;
+    }
 }
 
 @media only screen 
