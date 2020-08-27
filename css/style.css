@@ -215,6 +215,10 @@ body {
     z-index: 0;
 }
 
+#introduction {
+    margin-top: 5%;
+}
+
 .card-subtitle-black {
     font-family: "Inconsolata"; font-size: 1.5rem; font-weight: 300; color: white; letter-spacing: 0;
     color: black;
