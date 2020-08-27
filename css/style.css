@@ -299,45 +299,6 @@ footer {
     margin-left: 1rem;
 }
 
-.card-clickable {
-    cursor: pointer;
-}
-
-#mobile-nav {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: black;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 60px;
-    text-align:center;
-}
-
-.mobile-nav-link {
-    font-family: "Inconsolata"; font-size: 2rem; font-weight: 200; color: white;
-    padding: 1rem;
-    display: block;
-    margin-top: 1rem;
-}
-
-.hide {
-    opacity:0;
-    left:-100%;
-}
-.show {
-    opacity:1;
-    left:0;
-}
-
-.mobile-nav-link:hover {
-    color: black;
-    background-color: white;
-}
-
 .returnLink {
     position: fixed;
     bottom: 0;
@@ -375,18 +336,6 @@ and (max-device-width : 480px) {
     .header-nav-list-menu {
         display: none;
     }
-    .mb-header-menu-btn {
-        display: block;
-        margin-bottom: 0; margin-top: 0; margin-left: .5rem;
-        padding-left: .5rem; padding-right: .5rem;   
-        font-family: "Inconsolata"; font-size: 1.4rem; font-weight: 200; color: white; letter-spacing: 0.2rem;
-        cursor: pointer;
-        background-color: black;
-    }
-    .mb-header-menu-btn:hover {
-        background-color: white;
-        color: black;
-    }
     .footer {
         width: 100%;
     }
@@ -419,18 +368,6 @@ and (min-width : 321px) {
     }
     .header-nav-list-menu {
         display: none;
-    }
-    .mb-header-menu-btn {
-        display: block;
-        margin-bottom: 0; margin-top: 0; margin-left: .5rem;
-        padding-left: .5rem; padding-right: .5rem;   
-        font-family: "Inconsolata"; font-size: 1.6rem; font-weight: 200; color: white; letter-spacing: 0.2rem;
-        cursor: pointer;
-        background-color: black;
-    }
-    .mb-header-menu-btn:hover {
-        background-color: white;
-        color: black;
     }
     .footer {
         width: 100%;
@@ -469,18 +406,6 @@ and (max-device-width : 1024px) {
     }
     .header-nav-list-menu {
         display: none;
-    }
-    .mb-header-menu-btn {
-        display: block;
-        margin-bottom: 0; margin-top: 0; margin-left: .5rem;
-        padding-left: .5rem; padding-right: .5rem;   
-        font-family: "Inconsolata"; font-size: 1.6rem; font-weight: 200; color: white; letter-spacing: 0.2rem;
-        cursor: pointer;
-        background-color: black;
-    }
-    .mb-header-menu-btn:hover {
-        background-color: white;
-        color: black;
     }
     .footer {
         width: 100%;
@@ -525,9 +450,6 @@ and (min-width : 1224px) {
     .header-nav-list-menu {
         display: flex;
     }
-    .mb-header-menu-btn {
-        display: none;
-    }
     .footer {
         width: 80%;
     }
@@ -565,9 +487,6 @@ and (min-width : 1824px) {
     }
     .header-nav-list-menu {
         display: flex;
-    }
-    .mb-header-menu-btn {
-        display: none;
     }
     .footer {
         width: 80%;

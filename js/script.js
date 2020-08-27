@@ -14,14 +14,6 @@ window.onclick = function(event) {
     }
 } 
 
-function openNav() {
-    document.getElementById("mobile-nav").style.display = "block";
-}
-
-function closeNav() {
-    document.getElementById("mobile-nav").style.display = "none";
-}
-
 returnToTop = document.getElementById("returnToTop");
 
 var showReturn = function() {
