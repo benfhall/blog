@@ -5,7 +5,9 @@
     </title>
     <link rel="icon" type="image/png" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -17,13 +19,23 @@
             <nav class="header-nav">
                 <ul class="header-nav-list header-nav-list-menu">
                     <li class="header-nav-list-item">
-                        <a class="header-nav-list-link" href="index.html">
-                            <span>/home</span>
+                        <a class="header-nav-list-link" href="#experiences">
+                            <span>/experiences</span>
                         </a>
                     </li>
                     <li class="header-nav-list-item">
-                        <a class="header-nav-list-link" href="about.html">
-                            <span>/about</span>
+                        <a class="header-nav-list-link" href="#projects">
+                            <span>/projects</span>
+                        </a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-link" href="#education">
+                            <span>/education</span>
+                        </a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a class="header-nav-list-link" href="#contact">
+                            <span>/contact</span>
                         </a>
                     </li>
                 </ul>
@@ -33,47 +45,804 @@
             </button>
         </div>
     </header>
+    <div id="tome" class="modal">
 
-    <div id="content">
-        <div class="post-list">
-            <article class="post-item">
-                <div class="post-item-flex">
-                    <a class="post-item-left" href="/cyberpatriots">
-                        <h2 class="post-item-title">~/home/cyber_patriots</h2>
-                        <time class="post-item-date" datetime="2020-07-03">2020-07-03</time>
-                    </a>
-                </div>
-            </article>
-            <article class="post-item">
-                <div class="post-item-flex">
-                    <a class="post-item-left" href="/it_innovation">
-                        <h2 class="post-item-title">~/home/it_innovation</h2>
-                        <time class="post-item-date" datetime="2020-07-03">2020-07-03</time>
-                    </a>
-                </div>
-            </article>
-            <article class="post-item">
-                <div class="post-item-flex">
-                    <a class="post-item-left" href="/builder_trend">
-                        <h2 class="post-item-title">~/home/builder_trend</h2>
-                        <time class="post-item-date" datetime="2020-07-03">2020-07-03</time>
-                    </a>
-                </div>
-            </article>
-            <div class="pagination">
-                
-                <div class="pagination-item pagination-item-next">
-                    <a aria-label="next page" href="/page/2/" class="pagination-link pagination-link-next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
-                    </a>
-                </div>
-                <div class="pagination-item pagination-item-last">
-                    <a aria-label="last page" class="pagination-link pagination-link-last" href="/page/3/">
-                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24"><g><rect fill="none" height="24" width="24"></rect></g><g><g><polygon points="15.5,5 11,5 16,12 11,19 15.5,19 20.5,12"></polygon><polygon points="8.5,5 4,5 9,12 4,19 8.5,19 13.5,12"></polygon></g></g></svg>
-                    </a>
+        <div class="modal-content">
+          <span onclick="closeModal('tome')" class="close">../</span>
+            <div class="card-modal">
+                <div class="card-modal-text-container">
+                    
+                    <div class="card-subtitle-full">
+                        Developing a ride-share application catered towards the mobility-impaired.
+                    </div>
+                    
+                    <div class="text-grid">
+                        <div>
+                            <h2 class="card-label">
+                                /COMPANY
+                            </h2>
+                            <p class="card-text">
+                                CP Innovation
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /LOCATION
+                            </h2>
+                            <p class="card-text">
+                                Creighton Preperatory Schools
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /POSITION
+                            </h2>
+                            <p class="card-text">
+                                Head Developer
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /TIME
+                            </h2>
+                            <p class="card-text">
+                                Fall 2019 - Spring 2020
+                            </p>
+                        </div>
+
+                        <div class="card-text-fullwidth">
+                            <h2 class="card-label">
+                                /SKILLS
+                            </h2>
+                            <div class="card-grid">
+                                <div>
+                                    <p class="card-text">
+                                        > JavaScript
+                                    </p>
+                                    <p class="card-text">
+                                        > TypeScript
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > NodeJS
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > SQL
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /OVERVIEW
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /ROLE
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+
+                        <div>
+                            <br>
+                            <a class="card-text link" href="https://youtu.be/jAG09h3FJpI" target="_blank">
+                                VIDEO
+                            </a>
+                            <br>
+                        </div>
+                        
+                    </div>  
                 </div>
             </div>
         </div>
+      
+    </div>
+
+    <div id="findining" class="modal">
+
+        <div class="modal-content">
+          <span onclick="closeModal('findining')" class="close">../</span>
+            <div class="card-modal">
+                <div class="card-modal-text-container">
+                    
+                    <div class="card-subtitle-full">
+                        Creating an algorithm to adapt to user decisions on restaraunts and recommend new ones.
+                    </div>
+                    
+                    <div class="text-grid">
+                        <div>
+                            <h2 class="card-label">
+                                /COMPANY
+                            </h2>
+                            <p class="card-text">
+                                CP Innovation
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /LOCATION
+                            </h2>
+                            <p class="card-text">
+                                Creighton Preperatory Schools
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /POSITION
+                            </h2>
+                            <p class="card-text">
+                                Jr. Developer
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /TIME
+                            </h2>
+                            <p class="card-text">
+                                Fall 2017 - Spring 2018
+                            </p>
+                        </div>
+
+                        <div class="card-text-fullwidth">
+                            <h2 class="card-label">
+                                /SKILLS
+                            </h2>
+                            <div class="card-grid">
+                                <div>
+                                    <p class="card-text">
+                                        > JavaScript
+                                    </p>
+                                    <p class="card-text">
+                                        > TypeScript
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > NodeJS
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > SQL
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /OVERVIEW
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /ROLE
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+                        
+                    </div>  
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+    <div id="airmeet" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('airmeet')" class="close">../</span>
+            <div class="card-modal">
+                <div class="card-modal-text-container">
+                    
+                    <div class="card-subtitle-full">
+                        Creating an algorithm to adapt to user decisions on restaraunts and recommend new ones.
+                    </div>
+                    
+                    <div class="text-grid">
+                        <div>
+                            <h2 class="card-label">
+                                /COMPANY
+                            </h2>
+                            <p class="card-text">
+                                CP Innovation
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /LOCATION
+                            </h2>
+                            <p class="card-text">
+                                Creighton Preperatory Schools
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /POSITION
+                            </h2>
+                            <p class="card-text">
+                                Jr. Developer & Graphic Designer
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /TIME
+                            </h2>
+                            <p class="card-text">
+                                Fall 2016 - Spring 2017
+                            </p>
+                        </div>
+
+                        <div class="card-text-fullwidth">
+                            <h2 class="card-label">
+                                /SKILLS
+                            </h2>
+                            <div class="card-grid">
+                                <div>
+                                    <p class="card-text">
+                                        > JavaScript
+                                    </p>
+                                    <p class="card-text">
+                                        > TypeScript
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > NodeJS
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > SQL
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /OVERVIEW
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /ROLE
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+                        
+                    </div>  
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <div id="cypat" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('cypat')" class="close">../</span>
+            <div class="card-modal">
+                <div class="card-modal-text-container">
+                    
+                    <div class="card-subtitle-full">
+                        Securing computer systems running various distrobutions of the Linux kernel.
+                    </div>
+                    
+                    <div class="text-grid">
+                        <div>
+                            <h2 class="card-label">
+                                /COMPANY
+                            </h2>
+                            <p class="card-text">
+                                CP^2
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /LOCATION
+                            </h2>
+                            <p class="card-text">
+                                Creighton Preperatory Schools
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /POSITION
+                            </h2>
+                            <p class="card-text">
+                                Varisty Captain & Ubuntu Lead
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /TIME
+                            </h2>
+                            <p class="card-text">
+                                Fall 2016 - Spring 2020
+                            </p>
+                        </div>
+
+                        <div class="card-text-fullwidth">
+                            <h2 class="card-label">
+                                /SKILLS
+                            </h2>
+                            <div class="card-grid">
+                                <div>
+                                    <p class="card-text">
+                                        > Bash
+                                    </p>
+                                    <p class="card-text">
+                                        > SSH
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > Powershell
+                                    </p>
+                                    <p class="card-text">
+                                        > SQL
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > FTP
+                                    </p>
+                                    <p class="card-text">
+                                        > Unix
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /OVERVIEW
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /ROLE
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+
+                        <div>
+                            <br>
+                            <a class="card-text link" href="https://www.uscyberpatriot.org/" target="_blank">
+                                MORE
+                            </a>
+                            <br>
+                        </div>
+                        
+                    </div>  
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div id="secscript" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('secscript')" class="close">../</span>
+            <div class="card-modal">
+                <div class="card-modal-text-container">
+                    
+                    <div class="card-subtitle-full">
+                        Advanced bash script for automation of basic security practices.
+                    </div>
+                    
+                    <div class="text-grid">
+                        <div>
+                            <h2 class="card-label">
+                                /PROJECT
+                            </h2>
+                            <p class="card-text">
+                                AutoSecurity Script
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /TIME
+                            </h2>
+                            <p class="card-text">
+                                Spring 2017 - Spring 2020
+                            </p>
+                        </div>
+
+                        <div class="card-text-fullwidth">
+                            <h2 class="card-label">
+                                /SKILLS
+                            </h2>
+                            <div class="card-grid">
+                                <div>
+                                    <p class="card-text">
+                                        > Bash
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > Python
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="card-text-fullwidth">
+                            <h2 class="card-label">
+                                /OVERVIEW
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+
+                        <div>
+                            <br>
+                            <a class="card-text link" href="https://www.github.com/swidex/ubuntu-hardening" target="_blank">
+                                SOURCE
+                            </a>
+                            <br>
+                        </div>
+                        
+                    </div>  
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div id="rgb" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('rgb')" class="close">../</span>
+            <div class="card-modal">
+                <div class="card-modal-text-container">
+                    
+                    <div class="card-subtitle-full">
+                        Basic game where you collect the RGB spectrum, based on love2d compiler for Lua.
+                    </div>
+                    
+                    <div class="text-grid">
+                        <div>
+                            <h2 class="card-label">
+                                /PROJECT
+                            </h2>
+                            <p class="card-text">
+                                RGB - A Modern Bullet Hell Game
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /TIME
+                            </h2>
+                            <p class="card-text">
+                                Fall 2017 - Current
+                            </p>
+                        </div>
+
+                        <div class="card-text-fullwidth">
+                            <h2 class="card-label">
+                                /SKILLS
+                            </h2>
+                            <div class="card-grid">
+                                <div>
+                                    <p class="card-text">
+                                        > Lua
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="card-text">
+                                        > Love2D
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="card-text-fullwidth">
+                            <h2 class="card-label">
+                                /OVERVIEW
+                            </h2>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, in solum suscipit eam, delectus adversarium definitiones vim ad. In vocent volutpat duo, ei animal virtute mediocritatem eos. Sit dico noluisse scriptorem et, at eum oblique omittam vituperata. Unum suavitate sea ex, adhuc noluisse nam te. Primis saperet an usu. Sumo docendi reformidans pri et, ex dolorum appareat lobortis has. Movet utroque nam eu, ad duis scaevola omittantur sit, ad tibique nostrum invenire eos. Te noster essent alienum per, ex ius agam moderatius. Cum ne fugit veritus, autem delenit nam cu. Ut vel postea vocibus expetendis, no diam vero affert vim.
+                            </p>
+                        </div>
+
+                        <div>
+                            <br>
+                            <a class="card-text link" href="https://www.github.com/swidex/rgb" target="_blank">
+                                SOURCE
+                            </a>
+                            <br>
+                        </div>
+                        
+                    </div>  
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div id="iastate" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal('iastate')" class="close">../</span>
+            <div class="card-modal">
+                <div class="card-modal-text-container">
+                    
+                    <div class="card-subtitle-full">
+                        Iowa State University
+                    </div>
+                    
+                    <div class="text-grid">
+                        <div>
+                            <h2 class="card-label">
+                                /MAJOR
+                            </h2>
+                            <p class="card-text">
+                                Cybersecurity Engineering
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /MINOR
+                            </h2>
+                            <p class="card-text">
+                                Computer Science
+                            </p>
+                        </div>
+
+                        <div>
+                            <h2 class="card-label">
+                                /TIME
+                            </h2>
+                            <p class="card-text">
+                                August 2020 - May 2024
+                            </p>
+                        </div>
+
+                        <div id="courses">
+                            <h2 class="card-label">
+                                /COURSES
+                            </h2>
+                            <p class="card-text">
+                                > C
+                                <br>
+                                > Java
+                                <br>
+                                > Problem Solving
+                                <br>
+                                > Calculus I, II
+                            </p>
+                        </div>
+
+                        <div id="involvements">
+                            <h2 class="card-label">
+                                /INVOLVEMENTS
+                            </h2>
+                            <p class="card-text">
+                                > Systems Development Club
+                                <br>
+                                > Computer & Software Engineering Club
+                                <br>
+                                > Game Development Club
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div> 
+    </div>
+      
+    <div id="content">
+        
+        <div id="experiences" class="section">
+            <h1 class="card-title">/experiences</h1>
+            <div class="card-container">
+                <div onclick="showModal('tome')" class="card">
+                    
+                    <div class="card-subtitle">
+                        Developing a ride-share application catered towards the mobility-impaired.
+                    </div>
+                    <img class="card-image" src="img/experiences/tome.png">
+
+                </div>
+                <div onclick="showModal('findining')" class="card">
+                    
+                    <div class="card-subtitle-black">
+                        Creating an algorithm to adapt to user decisions on restaraunts and recommend new ones.
+                    </div>
+                    <img class="card-image" src="img/experiences/findining.png">
+                </div>
+                <div onclick="showModal('airmeet')" class="card">
+                    
+                    <div class="card-subtitle">
+                        Developing an application to enhance the experience of large conferences or meetings.
+                    </div>
+                    <img class="card-image" src="img/experiences/airmeet.png">
+                </div>
+                <div onclick="showModal('cypat')" class="card">
+                    
+                    <div class="card-subtitle">
+                        Securing computer systems running various distrobutions of the Linux kernel.
+                    </div>
+                    <img class="card-image" src="img/experiences/cyberpat.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="section">
+            <h1 class="card-title">/projects</h1>
+            <div class="card-container">
+                <div onclick="showModal('secscript')" class="card">
+                    <div class="card-subtitle">
+                        Advanced bash script for automation of basic security practices.
+                    </div>
+                    <img class="card-image" src="img/projects/script.png">
+                </div>
+                <div onclick="showModal('rgb')" class="card">
+                    <div class="card-subtitle-black">
+                        Basic game where you collect the RGB spectrum, based on love2d compiler for Lua.
+                    </div>
+                    <img class="card-image" src="img/projects/rgb.png">
+                </div>
+            </div>
+        </div>
+
+        <div id="education" class="section">
+            <h1 class="card-title">/education</h1>
+            <div onclick="showModal('iastate')" class="card-container mobile-only card-clickable">
+                <div class="card">
+                    <img class="card-image-full" src="img/education/iastate.png">
+                    <div class="card-subtitle">
+                        Iowa State University
+                    </div>
+                </div> 
+            </div>
+
+            <div class="card-container-full desktop-only">
+                <div class="card-full">
+                    <img class="card-image-full" src="img/education/iastate.png">
+                    <div class="card-text-container">
+                        <div class="card-subtitle-full">
+                            Iowa State University
+                        </div>
+                        
+                        <div class="text-grid">
+                            <div>
+                                <h2 class="card-label">
+                                    /MAJOR
+                                </h2>
+                                <p class="card-text">
+                                    Cybersecurity Engineering
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2 class="card-label">
+                                    /MINOR
+                                </h2>
+                                <p class="card-text">
+                                    Computer Science
+                                </p>
+                            </div>
+
+                            <div>
+                                <h2 class="card-label">
+                                    /TIME
+                                </h2>
+                                <p class="card-text">
+                                    August 2020 - May 2024
+                                </p>
+                            </div>
+
+                            <div id="courses">
+                                <h2 class="card-label">
+                                    /COURSES
+                                </h2>
+                                <p class="card-text">
+                                    > C
+                                    <br>
+                                    > Java
+                                    <br>
+                                    > Problem Solving
+                                    <br>
+                                    > Calculus I, II
+                                </p>
+                            </div>
+    
+                            <div id="involvements">
+                                <h2 class="card-label">
+                                    /INVOLVEMENTS
+                                </h2>
+                                <p class="card-text">
+                                    > Systems Development Club
+                                    <br>
+                                    > Computer & Software Engineering Club
+                                    <br>
+                                    > Game Development Club
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <h1 class="card-title">/contact</h1>
+            <div class="card-container">
+                <a href="mailto:ben1734.hall@gmail.com">
+                    <div class="card">
+                        <div class="card-subtitle">
+                            Email
+                        </div>
+                        <img class="card-image" src="img/contact/email.png">
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.github.com/swidex">
+                    <div class="card-contact">
+                        
+                            <div class="card-subtitle">
+                                GitHub
+                            </div>
+                            <img class="card-image" src="img/contact/github.png">
+                        
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/ben-f-hall/">
+                    <div class="card-contact">
+                        <div class="card-subtitle">
+                            LinkedIn
+                        </div>
+                        <img class="card-image" src="img/contact/linkedin.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+
     </div>
 
     <footer>
@@ -87,8 +856,13 @@
                 </script>,
                 Ben Hall
             </div>
+            <a class="copyright link" target="_blank" href="https://github.com/swidex/blog">
+                SOURCE
+            </a>
         </div>
     </footer>
+
+    <script src="js/modal.js"></script>
 
 </body>
 
