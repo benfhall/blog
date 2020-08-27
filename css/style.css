@@ -20,6 +20,7 @@ body {
     display: flex;
     line-height: 1;
     background-color: black;
+    overflow-x: hidden;
 }
 
 #content {
