@@ -13,7 +13,28 @@
 
 <body>
 
-    <header>
+    <div id="mobile-nav">
+        <a class="mobile-nav-link" onclick="closeNav()" href="#experiences">
+            <span>/experiences</span>
+        </a><br>
+        <a class="mobile-nav-link" onclick="closeNav()" href="#projects">
+            <span>/projects</span>
+        </a><br>
+        <a class="mobile-nav-link" onclick="closeNav()" href="#education">
+            <span>/education</span>
+        </a><br>
+        <a class="mobile-nav-link" onclick="closeNav()" href="#contact">
+            <span>/contact</span>
+        </a>
+    </div>
+
+    <div id="returnToTop">
+        <a class="returnLink" href="#top">
+            ^
+        </a>
+    </div>
+
+    <header id="top">
         <div class="header header-frame">
             <h1 class="header-title">ben@hall:~/home</h1>
             <nav class="header-nav">
@@ -40,7 +61,7 @@
                     </li>
                 </ul>
             </nav>
-            <button class="mb-header-menu-btn">
+            <button onclick="openNav()" class="mb-header-menu-btn">
                 <span>./</span>
             </button>
         </div>
@@ -862,7 +883,7 @@
         </div>
     </footer>
 
-    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
