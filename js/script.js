@@ -13,16 +13,3 @@ window.onclick = function(event) {
         window.curModal.style.display = "none";
     }
 } 
-
-returnToTop = document.getElementById("returnToTop");
-
-var showReturn = function() {
-  var y = window.scrollY;
-  if (y >= 1) {
-    returnToTop.className = "show"
-  } else {
-    returnToTop.className = "hide"
-  }
-};
-
-window.addEventListener("scroll", showReturn);
