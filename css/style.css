@@ -163,7 +163,6 @@ body {
 }
 
 .card-full {
-    border: 1px solid white;
     background-color: white;
     height: 500px;
     position: relative;
@@ -614,7 +613,6 @@ and (min-width : 1824px) {
         padding: 2rem;
     }
     .card-image-full {
-        border-right: 1px solid white;
         width: 33%;
         filter: brightness(100%);
     }
