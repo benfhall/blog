@@ -553,12 +553,10 @@ and (min-width : 1224px) {
         padding: 2rem;
     }
     .card-image-full {
-        border-right: 1px solid white;
         width: 33%;
         filter: brightness(100%);
     }
     .card-image-modal {
-        border-right: 1px solid white;
         width: 33%;
         filter: brightness(100%);
     }
