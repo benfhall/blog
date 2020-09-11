@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -21,7 +20,7 @@ body {
     display: flex;
     position: relative;
     line-height: 1;
-    background-color: black;
+    background-color: rgb(245, 245, 245);
     width: 100%;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -30,21 +29,10 @@ body {
 
 #content {
     flex: 1 0 auto;
-    padding: 2%;
+    padding: 1%;
     max-width: 1584px;
     margin: 0 auto;
-    background: black;
-    display: flex;
     flex-flow: column nowrap;
-}
-
-.link {
-    padding: .5rem;
-}
-
-.link:hover {
-    color: black;
-    background-color: white;
 }
 
 .section {
@@ -59,21 +47,7 @@ body {
     margin-left: auto;
 }
 
-.card-container-full {
-    width: 80%;
-    display: grid;
-    row-gap: 24px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.intro-container {
-    width: 80%;
-    display: grid;
-    row-gap: 24px;
-    margin-right: auto;
-    margin-left: auto;
-    
+.card-container-contact {
     column-gap: 24px;
     display: grid;
     row-gap: 24px;
@@ -81,8 +55,17 @@ body {
     margin-left: auto;
 }
 
-.intro-text-container {
-    padding: 2rem;
+.card-container-full {
+    display: grid;
+    row-gap: 24px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.intro-container {
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .card-text-container {
@@ -98,70 +81,66 @@ body {
 }
 
 .card-subtitle-full {
-    font-family: "Inconsolata"; font-size: 2rem; font-weight: 500; color: white;
+    font-family: "Noto Sans"; font-size: 2rem; font-weight: 400; color: black;
 }
 
 .card-label {
-    font-family: "Inconsolata"; font-size: .8rem; font-weight: 500; color: rgb(133, 133, 133); letter-spacing: .2rem;
+    font-family: "Roboto"; font-size: .8rem; font-weight: 300; color: rgb(133, 133, 133); letter-spacing: .2rem;
     padding-top: 2rem;
     padding-bottom: 0;
 }
 
 .card-text {
-    font-family: "Inconsolata"; font-size: 1.2rem; font-weight: 100; color: white; letter-spacing: 0;
-    margin-top: -.25rem;
+    font-family: "Roboto"; font-size: 1.2rem; font-weight: 300; color: black; letter-spacing: 0.05rem;
+    line-height: 1.5rem;
 }
 
 .intro-card-text {
-    font-family: "Inconsolata"; font-size: 1.4rem; font-weight: 100; color: white; letter-spacing: 0;
+    font-family: "Roboto"; font-size: 1.4rem; font-weight: 100; color: black; letter-spacing: 0;
+    line-height: 1.5rem;
     margin-top: -.25rem;
 }
 
+.colored-text {
+    color: rgb(0, 119, 255);
+}
+
 .card-title {
-    font-family: "Inconsolata"; font-size: 1.5rem; font-weight: 100; color: white; letter-spacing: .35rem;
+    font-family: "Roboto"; font-size: 1rem; font-weight: 400; color: grey; letter-spacing: 0.25rem;
     margin-left: 10%;
     margin-bottom: 30px;
 }
 
 .header-title {
-    font-family: "Inconsolata"; font-size: 2rem; font-weight: 500; color: white; letter-spacing: .1rem;
+    width: 64px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     margin-left: 10%;
     margin-bottom: 30px;
+    margin-top: 60px;
 }
+
+.header-links {
+    margin-top: 1rem;
+}
+
+.st0{fill:rgb(0, 119, 255);}
+.st1{fill:#B3B3B3;}
+.st2{fill:none;stroke:#E6E6E6;stroke-width:128;stroke-miterlimit:10;}
+.st3{fill:#FFFFFF;}
 
 .card {
-    border: 1px solid white;
     height: 500px;
     cursor: pointer;
     position: relative;
     z-index: 0;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.card:hover > .card-subtitle {
-    background-color: white;
-    color: black;
-}
-
-.card:hover > .card-subtitle-black {
-    background-color: black;
-    color: white;
-}
-
-.card-contact:hover > .card-subtitle {
-    background-color: white;
-    color: black;
-}
-
-path {
-    fill: white;
-}
-
-.card-contact {
-    border: 1px solid white;
-    height: 500px;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 #courses {
@@ -176,17 +155,21 @@ path {
 }
 
 .intro-card {
-    border: 1px solid white;
+    background-color: white;
     position: relative;
     padding: 2rem;
     z-index: 0;
+    border-radius: 5px;
 }
 
 .card-full {
     border: 1px solid white;
+    background-color: white;
     height: 500px;
     position: relative;
     z-index: 0;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .card-modal {
@@ -199,6 +182,10 @@ path {
     object-fit: cover;
     top:0; left:0;
     z-index: -1;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 0px;
 }
 
 .card-text-fullwidth {
@@ -207,34 +194,41 @@ path {
 
 .card-image {
     width: 100%;
-    height: 100%;
-    position: absolute;
+    height: 66.66%;
     object-fit: cover;
     top:0; left:0;
     z-index: -1;
+    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.card-content-container {
+    font-family: "Roboto"; font-size: 1.2rem; font-weight: 300; color: white; 
+    color: black;
+    height: 33.33%;
+    padding: 2rem;
+    z-index: 0;
+    position: relative;
+}
+
+.card-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
 }
 
 .card-subtitle {
-    font-family: "Inconsolata"; font-size: 1.5rem; font-weight: 300; color: white; letter-spacing: 0;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    z-index: 0;
+    font-family: "Roboto"; font-size: 1rem; font-weight: 500; color: white; letter-spacing: .15rem;
+    margin-bottom: 1rem;
+    color: black;
 }
 
 #introduction {
     margin-top: 3%;
-}
-
-.card-subtitle-black {
-    font-family: "Inconsolata"; font-size: 1.5rem; font-weight: 300; color: white; letter-spacing: 0;
-    color: black;
-    position: absolute;
-    bottom: 0;
-    padding: 1rem;
-    z-index: 0;
 }
 
 a{
@@ -242,75 +236,142 @@ a{
     color: inital;
 }
 
-.header-nav-link {
-    font-family: "Inconsolata"; font-size: 1.6rem; font-weight: 200; color: white; letter-spacing: 0.2rem;
+.button-filled {
+    font-family: "Roboto"; font-size: 1rem; font-weight: 700; color: white; letter-spacing: 0.3rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 5px;
     cursor: pointer;
+    background-color: rgb(0, 119, 255);
+    margin-right: 1rem;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.header-nav-link:hover {
-    color: black;
-    background-color: white;
+.button-filled:hover {
+    background-color: rgba(0, 119, 255,.9);
 }
 
-.header-nav-list-link {
-    color: white;
+.button-filled:active {
+    background-color: rgba(122, 184, 255,.5);
 }
 
-button {
+.button-outline {
+    font-family: "Roboto"; font-size: 1rem; font-weight: 700; color: rgb(0, 119, 255); letter-spacing: 0.3rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 5px;
     cursor: pointer;
-    background: none;
-    border: none;
-    outline: none;
+    border: 1px solid rgb(0, 119, 255);
+    margin-right: 1rem;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.button-outline:hover {
+    background-color: rgba(0, 119, 255, 0.1);
+}
+
+.button-outline:active {
+    background-color: rgba(0, 119, 255, 0.5);
+}
+
+.button-outline-white {
+    font-family: "Roboto"; font-size: 1rem; font-weight: 700; color: white; letter-spacing: 0.3rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin-right: 1rem;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.button-outline-white:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.button-outline-white:active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-icon {
+    fill: rgb(0, 119, 255);
+    width: 100%;
+    padding: 20%;
+}
+
+.card-contact {
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-contact:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 footer {
     margin: auto auto 0;
     width: 100%;
     padding: 1rem 2%;
-    max-width: 1584px;
     position: relative;
-    z-index: 000;
+    z-index: 0;
     display: block;
+    background-color: rgb(0, 119, 255);
 }
+
 .footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid white;
-    padding: 1rem 2rem;
+    max-width: 1425px;
+    border-radius: 5px;
+    padding: 2rem;
     margin: 0 auto;
 }
+
+.footer-logo {
+    width: 64px;
+    padding-bottom: 1rem;
+}
+
+.footer-links {
+    column-gap: 36px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 10px;
+}
+
+.footer-links > a {
+    font-family: "Roboto"; font-weight: 500; font-size: .75rem; letter-spacing: 0.25rem;
+    color: white;
+    text-decoration: none;
+    line-height: 2rem;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.footer-links > a:hover {
+    color: rgba(255, 255, 255, 0.692);
+}
+
 .copyright {
-    font-family: "Inconsolata"; font-size: 1rem; font-weight: 200; color: white;
-}
-
-.pagination-item:not(:last-of-type) {
-
-    margin-left: 1rem;
-}
-
-.returnLink {
-    position: fixed;
-    bottom: 0;
-    font-family: "Inconsolata"; font-size: 2rem; font-weight: 200; color: white;
-    z-index: 50;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-left: .5rem;
-    padding-right: .5rem;
-    margin-bottom: .5rem;
-}
-
-.returnLink:hover {
-    background-color: white;
-    color: black;
+    font-family: "Roboto"; font-size: 1rem; font-weight: 100; color: white;
 }
 
 /* Smartphones */
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
+    .header-links {
+        row-gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .intro-text-container {
+        padding: 0rem;
+    }
     .card-image-full {
         width: 100%;
         filter: brightness(50%);
@@ -340,6 +401,10 @@ and (max-device-width : 480px) {
     .card-container-full {
         width: 100%;
         display: none;
+    }
+    .card-container-contact {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
     }
     .intro-container {
         width: 100%;
@@ -353,10 +418,21 @@ and (max-device-width : 480px) {
     .card-grid {
         grid-template-columns: repeat(1, 1fr);
     }
+    .full-width-mobile {
+        width: 100%;
+    }
 }
 
 @media only screen 
 and (min-width : 321px) {
+    .header-links {
+        row-gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .intro-text-container {
+        padding: 0rem;
+    }
     .card-image-full {
         width: 100%;
         filter: brightness(50%);
@@ -386,6 +462,10 @@ and (min-width : 321px) {
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
     }
+    .card-container-contact {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
     .card-container-full {
         width: 100%;
         display: none;
@@ -397,12 +477,24 @@ and (min-width : 321px) {
     .desktop-only {
         display: none;
     }
+    .full-width-mobile {
+        width: 100%;
+    }
 }
 
 /* iPads */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+    .header-links {
+        row-gap: 1rem;
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .intro-text-container {
+        padding: 0rem;
+    }
     .card-image-full {
         width: 100%;
         filter: brightness(50%);
@@ -432,6 +524,10 @@ and (max-device-width : 1024px) {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
     }
+    .card-container-contact {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .card-container-full {
         width: 100%;
         display: none;
@@ -447,6 +543,15 @@ and (max-device-width : 1024px) {
 /* Desktops and laptops */
 @media only screen 
 and (min-width : 1224px) {
+    .header-links {
+        row-gap: 1rem;
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .intro-text-container {
+        padding: 2rem;
+    }
     .card-image-full {
         border-right: 1px solid white;
         width: 33%;
@@ -458,33 +563,37 @@ and (min-width : 1224px) {
         filter: brightness(100%);
     }
     .card-title {
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .header-title {
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .header-frame {
-        width: 80%;
+        width: 90%;
     }
     #content {
-        width: 80%;
+        width: 100%;
     }
     .header-nav-list-menu {
         display: flex;
     }
     .footer {
-        width: 80%;
+        width: 90%;
     }
     .card-container {
-        width: 80%;
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-container-contact {
+        width: 90%;
         grid-template-columns: repeat(3, 1fr);
     }
     .card-container-full {
-        width: 80%;
+        width: 90%;
         display: grid;
     }
     .intro-container {
-        width: 80%;
+        width: 90%;
     }
     .mobile-only {
         display: none;
@@ -497,39 +606,52 @@ and (min-width : 1224px) {
 /* Large screens */
 @media only screen 
 and (min-width : 1824px) {
+    .header-links {
+        row-gap: 1rem;
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .intro-text-container {
+        padding: 2rem;
+    }
     .card-image-full {
         border-right: 1px solid white;
         width: 33%;
         filter: brightness(100%);
     }
     .card-title {
-        margin-left: 10%;
+        margin-left: 5%;
     }
     .header-title {
-        margin-left: 10%;
+        margin-left: 5%;
     }
     #content {
-        width: 80%;
+        width: 100%;
     }
     .header-frame {
-        width: 80%;
+        width: 90%;
     }
     .header-nav-list-menu {
         display: flex;
     }
     .footer {
-        width: 80%;
+        width: 90%;
     }
     .card-container {
-        width: 80%;
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card-container-contact {
+        width: 90%;
         grid-template-columns: repeat(3, 1fr);
     }
     .card-container-full {
-        width: 80%;
+        width: 90%;
         display: grid;
     }
     .intro-container {
-        width: 80%;
+        width: 90%;
     }
     .mobile-only {
         display: none;

@@ -13,13 +13,13 @@
 }
 
 .modal-content {
-    background-color: black;
-    position: absolute;
+    background-color: white;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    border: 1px solid white;
+    border-radius: 5px;
     z-index: 4;
     cursor: auto;
     overflow-y: auto;
@@ -31,18 +31,20 @@ body.modal {
 }
 
 .close {
-    color: white;
-    font-family: "Inconsolata";
-    float: right;
+    color: black;
+    font-family: "Roboto";
+    position: absolute;
+    left: 1rem; top: 1rem;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 100;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    background-color: white;
+    color: rgb(0, 119, 255);
     text-decoration: none;
+    left: 0.5rem;
     cursor: pointer;
 } 
 
@@ -55,7 +57,7 @@ and (max-device-width : 480px) {
         max-height: 100%;
     }
     .text-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 100%;
     }
     .card-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -69,7 +71,7 @@ and (min-width : 321px) {
         max-height: 100%;
     }
     .text-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 100%;
     }
     .card-grid {
         grid-template-columns: repeat(1, 1fr);
@@ -81,14 +83,17 @@ and (min-width : 321px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
     .modal-content {
-        width: 100%;
-        max-height: 100%;
+        width: 90%;
+        height: 90%;
     }
     .text-grid {
-        grid-template-columns: repeat(1, 1fr);
+        column-gap: 36px;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
     .card-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
     }
 }
 
