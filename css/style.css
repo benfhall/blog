@@ -35,6 +35,12 @@ body {
     flex-flow: column nowrap;
 }
 
+.header-icons {
+    width:64px;
+    height: 64px;
+    margin-right: 8px;
+}
+
 .section {
     padding-bottom: 80px;
 }
